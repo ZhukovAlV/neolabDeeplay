@@ -13,6 +13,6 @@ public class User {
     private String login;
     private String password;
     private long accessLvl;
-/*    private LocalDateTime dateOfCreation;
-    private LocalDate dateOfModification;*/
+    private LocalDateTime dateOfCreation;
+    private LocalDate dateOfModification;
 }

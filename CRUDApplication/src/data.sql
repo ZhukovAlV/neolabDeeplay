@@ -3,12 +3,14 @@ CREATE TABLE user (
     login VARCHAR(100) NOT NULL,
     password VARCHAR(100) NOT NULL,
     accesLvl BIGINT,
-    dateOfCreation DATE,
+    dateOfCreation TIMESTAMP,
     dateOfModification DATE
     )
 
 INSERT INTO user (id, login, password, accesLvl, dateOfCreation, dateOfModification)
-VALUES (1, 'kant', 'kant', 1, NOW(), NOW())
+VALUES
+(1, 'kant', 'kant', 1, NOW(), NOW()),
+(2, 'gegel', 'gegel', 1, NOW(), NOW())
 
 SELECT *
 FROM user
